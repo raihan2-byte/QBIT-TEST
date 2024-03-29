@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+*,
+*::before,
+*::after,
+html,
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 2px;
+  padding: 0;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #3e3e08;
+  padding: 8px 16px;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #5f5e36;
+}
